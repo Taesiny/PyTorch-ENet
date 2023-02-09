@@ -22,16 +22,16 @@ class CamVid(data.Dataset):
 
     """
     # Training dataset root folders
-    train_folder = 'train'
-    train_lbl_folder = 'trainannot'
+    train_folder = 'train/images'
+    train_lbl_folder = 'train/labels'
 
     # Validation dataset root folders
-    val_folder = 'val'
-    val_lbl_folder = 'valannot'
+    val_folder = 'val/images'
+    val_lbl_folder = 'val/labels'
 
     # Test dataset root folders
-    test_folder = 'test'
-    test_lbl_folder = 'testannot'
+    test_folder = 'test/images'
+    test_lbl_folder = 'test/labels'
 
     # Images extension
     img_extension = '.png'

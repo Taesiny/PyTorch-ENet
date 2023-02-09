@@ -94,9 +94,9 @@ def load_dataset(dataset):
 
     # Get a batch of samples to display
     if args.mode.lower() == 'test':
-        images, labels = iter(test_loader).next()
+        images, labels = next(iter(test_loader))
     else:
-        images, labels = iter(train_loader).next()
+        images, labels = next(iter(train_loader))
     print("Image size:", images.size())
     print("Label size:", labels.size())
     print("Class-color encoding:", class_encoding)
