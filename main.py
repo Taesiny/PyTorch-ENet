@@ -81,7 +81,7 @@ def load_dataset(dataset):
 
     # Remove the road_marking class from the CamVid dataset as it's merged
     # with the road class
-    if args.dataset.lower() == 'camvid':
+    if args.dataset.lower() in ['camvid','own']:
         del class_encoding['road_marking']
 
     # Get number of classes to predict
@@ -288,6 +288,8 @@ if __name__ == '__main__':
     # Import the requested dataset
     if args.dataset.lower() == 'camvid':
         from data import CamVid as dataset
+    elif args.dataset.lower() == 'own':
+        from data import Own as dataset
     elif args.dataset.lower() == 'cityscapes':
         from data import Cityscapes as dataset
     else:
