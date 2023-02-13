@@ -32,7 +32,7 @@ def get_arguments():
     parser.add_argument(
         "--epochs",
         type=int,
-        default=300,
+        default=80,
         help="Number of training epochs. Default: 300")
     parser.add_argument(
         "--learning-rate",
@@ -61,7 +61,7 @@ def get_arguments():
     # Dataset
     parser.add_argument(
         "--dataset",
-        choices=['camvid', 'cityscapes'],
+        choices=['camvid', 'cityscapes','own'],
         default='camvid',
         help="Dataset to use. Default: camvid")
     parser.add_argument(
@@ -78,7 +78,7 @@ def get_arguments():
     parser.add_argument(
         "--width",
         type=int,
-        default=480,
+        default=360,
         help="The image width. Default: 480")
     parser.add_argument(
         "--weighing",

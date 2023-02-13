@@ -1,0 +1,25 @@
+ARGUMENTS
+batch_size: 10
+dataset: own
+dataset_dir: D:/Synt_data/ELG_4960_MSTVision_final/8k_Daten_korrigiert1/
+device: cuda
+epochs: 80
+height: 360
+ignore_unlabeled: False
+imshow_batch: False
+learning_rate: 0.0005
+lr_decay: 0.1
+lr_decay_epochs: 100
+mode: train
+name: test
+print_step: False
+resume: False
+save_dir: save/test
+weighing: ENet
+weight_decay: 0.0002
+width: 360
+workers: 4
+
+BEST VALIDATION
+Epoch: 60
+Mean IoU: 0.6570218566264094

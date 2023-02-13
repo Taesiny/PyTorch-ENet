@@ -38,7 +38,7 @@ class Own(data.Dataset):
 
     # Default encoding for pixel value, class name, and class color
     color_encoding = OrderedDict([
-        ('bg', (0, 0, 0)),
+        ('unlabeled', (0, 0, 0)),
         ('granule', (128, 0, 0)),
     ])
 
